@@ -1,0 +1,18 @@
+{
+  "short_name": "Web3GO",
+  "name": "Web3GO",
+  "description": "Web3GO",
+  "homepage_url": "https://www.Web3GO.finance",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1FC7D4",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg",
+      "sizes": "32x32"
+    }
+  ]
+}
