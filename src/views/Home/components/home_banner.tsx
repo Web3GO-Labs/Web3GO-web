@@ -18,7 +18,7 @@ const BannerStyled = styled.div`
   text-align: center;
   ${({ theme }) => theme.mediaQueries.md} {
     text-align: left;
-    padding: 243px 20px 309px;
+    padding: 180px 20px 309px;
   }
   h1 {
     font-size: 44px;

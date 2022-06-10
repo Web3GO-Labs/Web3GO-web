@@ -209,10 +209,16 @@ const UlStyled = styled.ul`
     &:nth-child(1),
     &:nth-child(4) {
       background-color: #c4f7e5;
+      .ul_text {
+        background-color: #e6fff6;
+      }
     }
     &:nth-child(2),
     &:nth-child(3) {
       background-color: #f3f1c4;
+      .ul_text {
+        background-color: #fffedf;
+      }
     }
 
     &.big {
@@ -256,7 +262,6 @@ const UlStyled = styled.ul`
       display: flex;
       justify-content: space-around;
       align-items: center;
-      background: #e6fff6;
       text-align: center;
       height: 148px;
       h2 {
