@@ -59,7 +59,7 @@ const HomeStyled = styled.div`
   .two_bg {
     // 100px
     // 240px
-    padding: 0 0 150px;
+    padding: 0 0 100px;
     background-image: radial-gradient(circle at 50% 0%, #d9ffe1 0%, #fffffb 83%);
     border-bottom: 8px solid #000;
     ${({ theme }) => theme.mediaQueries.md} {
@@ -84,7 +84,13 @@ const HomeStyled = styled.div`
       width: 80%;
       ${({ theme }) => theme.mediaQueries.md} {
         width: 40%;
-        min-width: 317px;
+        min-width: 594px;
+      }
+      p {
+        width: 100%;
+        ${({ theme }) => theme.mediaQueries.md} {
+          width: 72%;
+        }
       }
     }
     h2 {

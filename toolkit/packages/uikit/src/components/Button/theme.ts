@@ -31,9 +31,9 @@ export const styleVariants = {
   [variants.TERTIARY]: {
     backgroundColor: "transparent",
     boxShadow: "none",
-    color: "primary",
+    color: "#000",
     border: "1px solid",
-    borderColor: "primary",
+    borderColor: "#000",
   },
   [variants.SUBTLE]: {
     backgroundColor: "textSubtle",

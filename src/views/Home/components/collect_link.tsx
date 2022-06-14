@@ -6,17 +6,17 @@ const CollectLink = () => {
   return (
     <CollectLinkStyled>
       <li>
-        <a href="/">
+        <a href="https://twitter.com/Web3Go_" target="_blank" rel="noreferrer">
           <TwitterIcon />
         </a>
       </li>
       <li>
-        <a href="/">
+        <a href="/" target="_blank" rel="noreferrer">
           <DiscordIcon />
         </a>
       </li>
       <li>
-        <a href="/">
+        <a href="/" target="_blank" rel="noreferrer">
           <TelegramIcon />
         </a>
       </li>
@@ -24,6 +24,8 @@ const CollectLink = () => {
   );
 };
 const CollectLinkStyled = styled.ul`
+  position: relative;
+  z-index: 99;
   padding-top: 56px;
   clear: both;
   height: calc(56px + 10px + 48px + 3px * 2);

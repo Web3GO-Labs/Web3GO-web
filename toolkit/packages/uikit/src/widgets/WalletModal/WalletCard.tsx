@@ -20,7 +20,7 @@ const WalletButton = styled(Button).attrs({ width: "100%", variant: "text", padd
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(90deg, #303fff, #c947d9);
+  background-color: #92f1c2;
   border-radius: 12px;
 `;
 

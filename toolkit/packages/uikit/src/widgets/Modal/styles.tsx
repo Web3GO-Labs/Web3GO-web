@@ -62,7 +62,7 @@ export const ModalContainer = styled(Box)<{ minWidth: string }>`
   }
 `;
 export const ModalContainerInner = styled.div`
-  background-color: #0d1012;
+  background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
 `;
