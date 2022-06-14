@@ -8,28 +8,6 @@ declare module 'styled-components' {
 
 const GlobalStyle = createGlobalStyle`
 
-body, html{
-  overflow-x: hidden;
-    background-color: #DCFFEE;
-}
-ul, li{
-  list-style:none
-}
-img {
-  height: auto;
-  max-width: 100%;
-}
-#root {
-  display: flex;
-  flex-direction: column;
-}
-h1,h2,h3,h4{
-  font-family: 'ParableLF';
-  font-weight: 400;
-}
-a, button, p, ul, li,i {
-  font-family: 'PanamaBold';
-}
 `;
 
 export default GlobalStyle;
