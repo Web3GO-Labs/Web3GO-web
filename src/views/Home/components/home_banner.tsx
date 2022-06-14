@@ -39,7 +39,8 @@ const BG = () => {
   }, []);
   return useMemo(() => {
     return (
-      <div ref={ref}>
+      <>
+        <div ref={ref}></div>
         {ref ? (
           <div className="bg_image">
             <img className="one" src="/images/home/Banner_01.svg" alt="home" />
@@ -47,7 +48,7 @@ const BG = () => {
             <img className="three" src="/images/home/Banner_03.svg" alt="home" />
           </div>
         ) : null}
-      </div>
+      </>
     );
   }, []);
 };
@@ -82,6 +83,7 @@ const BannerStyled = styled.div`
     left: 50%;
     transform: translateX(-50%);
     min-width: 500px;
+    // min-width: 500px;
 
     ${({ theme }) => theme.mediaQueries.md} {
       position: absolute;
