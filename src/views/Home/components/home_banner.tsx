@@ -43,9 +43,9 @@ const BG = () => {
         <div ref={ref}></div>
         {ref ? (
           <div className="bg_image">
-            <img className="one" src="/images/home/Banner_01.svg" alt="home" />
-            <img className="two" src="/images/home/Banner_02.svg" alt="home" />
-            <img className="three" src="/images/home/Banner_03.svg" alt="home" />
+            <img className="one" src="/images/home/Banner_01.png" alt="home" />
+            <img className="two" src="/images/home/Banner_02.png" alt="home" />
+            <img className="three" src="/images/home/Banner_03.png" alt="home" />
           </div>
         ) : null}
       </>

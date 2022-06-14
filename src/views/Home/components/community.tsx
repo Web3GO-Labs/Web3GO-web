@@ -24,8 +24,8 @@ const Community = () => {
       </div>
       <div className="bg">
         <div className="bg_image">
-          <img className="one" src="/images/home/Community_01.svg" alt="home" />
-          <img className="two" src="/images/home/Community_02.svg" alt="home" />
+          <img className="one" src="/images/home/Community_01.png" alt="home" />
+          <img className="two" src="/images/home/Community_02.png" alt="home" />
         </div>
         <BG />
         {/* <img src="/images/home/community_bg01.webp" alt="banner" /> */}
