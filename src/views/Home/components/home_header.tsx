@@ -32,6 +32,7 @@ const HomeHeaderStyled = styled.div`
   transition: all 0.3s ease;
   z-index: 10;
   padding: 40px 20px;
+  position: relative;
   .inner {
     max-width: ${({ theme }) => theme.siteWidth}px;
     margin: 0 auto;
