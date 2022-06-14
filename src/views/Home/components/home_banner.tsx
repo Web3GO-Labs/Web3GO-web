@@ -19,11 +19,6 @@ const HomeBanner = () => {
       <h1>The Web3.0 Projects Grow Out of Here</h1>
       <CollectLink />
       <div className="banner_bg_bg">
-        <div className="bg_image">
-          <img className="one" src="/images/home/Banner_01.svg" alt="home" />
-          <img className="two" src="/images/home/Banner_02.svg" alt="home" />
-          <img className="three" src="/images/home/Banner_03.svg" alt="home" />
-        </div>
         <BG />
       </div>
     </BannerStyled>
@@ -43,7 +38,17 @@ const BG = () => {
     return () => animation.destroy();
   }, []);
   return useMemo(() => {
-    return <div ref={ref}></div>;
+    return (
+      <div ref={ref}>
+        {ref ? (
+          <div className="bg_image">
+            <img className="one" src="/images/home/Banner_01.svg" alt="home" />
+            <img className="two" src="/images/home/Banner_02.svg" alt="home" />
+            <img className="three" src="/images/home/Banner_03.svg" alt="home" />
+          </div>
+        ) : null}
+      </div>
+    );
   }, []);
 };
 const BannerStyled = styled.div`
