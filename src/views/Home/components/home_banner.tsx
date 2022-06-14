@@ -83,7 +83,7 @@ const BannerStyled = styled.div`
     left: 50%;
     transform: translateX(-50%);
     min-width: 500px;
-    // min-width: 500px;
+    min-height: 500px;
 
     ${({ theme }) => theme.mediaQueries.md} {
       position: absolute;
