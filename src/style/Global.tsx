@@ -7,14 +7,7 @@ declare module 'styled-components' {
 }
 
 const GlobalStyle = createGlobalStyle`
-@font-face {
-  font-family: 'PanamaBold';
-  src: url('/fonts/PanamaBold.otf');
-}
-@font-face {
-  font-family: 'ParableLF';
-  src: url('/fonts/ParableLF-ExtraBold.otf');
-}
+
 body, html{
   overflow-x: hidden;
     background-color: #DCFFEE;
