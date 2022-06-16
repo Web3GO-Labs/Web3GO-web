@@ -1,34 +1,30 @@
 import { InjectedConnector } from '@web3-react/injected-connector';
-import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
 import { BscConnector } from '@binance-chain/bsc-connector';
 import { ConnectorNames } from '@my/ui';
 import { ethers } from 'ethers';
-import getNodeUrl from './getRpcUrl';
-import { chainId } from 'config/constants/tokens';
 
 const POLLING_INTERVAL = 12000;
-const rpcUrl = getNodeUrl();
 // supportedChainIds
 const supportedChainIds = [
-  1, 3, 4, 5, 42, 52, 56, 81, 82, 87, 97, 100, 137, 226, 336, 592, 1337, 1887, 31337, 71393, 80001, 1666700000,
-  1666600000, 1666600001, 1666600002, 1666600003,
+  1, 3, 4, 10, 56, 58, 66, 69, 81, 82, 87, 100, 128, 137, 250, 288, 336, 361, 365, 592, 336, 4_002, 42_161, 43_114,
+  421_611, 80_001, 43_114, 43_113,
 ];
 const injected = new InjectedConnector({
   supportedChainIds: supportedChainIds,
 });
 
-const walletconnect = new WalletConnectConnector({
-  rpc: { [chainId]: rpcUrl },
-  bridge: 'https://pancakeswap.bridge.walletconnect.org/',
-  qrcode: true,
-  // pollingInterval: POLLING_INTERVAL,
-});
+// const walletconnect = new WalletConnectConnector({
+//   rpc: { [chainId]: rpcUrl },
+//   bridge: 'https://pancakeswap.bridge.walletconnect.org/',
+//   qrcode: true,
+//   // pollingInterval: POLLING_INTERVAL,
+// });
 
 const bscConnector = new BscConnector({ supportedChainIds: supportedChainIds });
 
 export const connectorsByName: { [connectorName in ConnectorNames]: any } = {
   [ConnectorNames.Injected]: injected,
-  [ConnectorNames.WalletConnect]: walletconnect,
+  [ConnectorNames.WalletConnect]: injected,
   [ConnectorNames.BSC]: bscConnector,
 };
 

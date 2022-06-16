@@ -37,7 +37,8 @@ export const BASE_URL = {
 };
 export const BASE_ADD_LIQUIDITY_URL = `${BASE_URL}/add`;
 export const BASE_LIQUIDITY_POOL_URL = `${BASE_URL}/pool`;
-export const BASE_BSC_SCAN_URL = BASE_BSC_SCAN_URLS[process.env.REACT_APP_CHAIN_ID];
+export const BASE_BSC_SCAN_URL = '';
+// export const BASE_BSC_SCAN_URL = BASE_BSC_SCAN_URLS[process.env.REACT_APP_CHAIN_ID];
 export const LOTTERY_MAX_NUMBER_OF_TICKETS = 50;
 export const LOTTERY_TICKET_PRICE = 1;
 export const DEFAULT_TOKEN_DECIMAL = BIG_TEN.pow(18);

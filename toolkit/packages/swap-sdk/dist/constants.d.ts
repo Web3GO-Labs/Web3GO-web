@@ -15,28 +15,90 @@ export declare enum CHAINKEY {
     ASTR = "ASTR"
 }
 export declare enum ChainId {
+    ETH_MAINNET = 1,
+    ETH_ROPSTEN = 3,
+    ETH_RINKEBY = 4,
+    OPTIMISTIC_MAINNET = 10,
     BSC_MAINNET = 56,
-    BSC_TESTNET = 87,
-    ASTR_MAINNET = 592,
+    ONTOLOGY_MAINNET = 58,
+    OEC_MAINNET = 66,
+    OPTIMISTIC_TESTNET = 69,
     ASTR_TESTNET = 81,
+    SDN_TESTNET = 82,
+    BSC_TESTNET = 87,
+    XDAI_MAIN = 100,
+    HECO_MAINNET = 128,
+    POLYGON_MAINNET = 137,
+    FANTOM_MAINNET = 250,
+    BOBA_MAINNET = 288,
+    SHIDEN_MAINNET = 336,
+    THETA_MAINNET = 361,
+    THETA_TESTNET = 365,
+    ASTR_MAINNET = 592,
     SDN_MAINNET = 336,
-    SDN_TESTNET = 82
+    FANTOM_TESTNET = 4002,
+    ARBITRUM_MAINNET = 42161,
+    AVAX_MAIN = 43114,
+    ARBITRUM_TESTNET = 421611,
+    POLYGON_TESTNET = 80001,
+    AVALANCH_MAINNET = 43114,
+    AVALANCH_TESTNET = 43113
 }
 export declare const FACTORY_ADDRESS: {
+    1: string;
+    3: string;
+    4: string;
+    10: string;
     56: string;
-    87: string;
-    336: string;
-    82: string;
-    592: string;
+    58: string;
+    66: string;
+    69: string;
     81: string;
+    82: string;
+    87: string;
+    100: string;
+    128: string;
+    137: string;
+    250: string;
+    288: string;
+    336: string;
+    361: string;
+    365: string;
+    592: string;
+    4002: string;
+    42161: string;
+    43114: string;
+    421611: string;
+    80001: string;
+    43113: string;
 };
 export declare const INIT_CODE_HASH: {
+    1: string;
+    3: string;
+    4: string;
+    10: string;
     56: string;
-    87: string;
-    336: string;
-    82: string;
-    592: string;
+    58: string;
+    66: string;
+    69: string;
     81: string;
+    82: string;
+    87: string;
+    100: string;
+    128: string;
+    137: string;
+    250: string;
+    288: string;
+    336: string;
+    361: string;
+    365: string;
+    592: string;
+    4002: string;
+    42161: string;
+    43114: string;
+    421611: string;
+    80001: string;
+    43113: string;
 };
 export declare const MINIMUM_LIQUIDITY: JSBI;
 export declare const ZERO: JSBI;

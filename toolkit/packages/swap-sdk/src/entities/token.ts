@@ -57,36 +57,34 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 }
 
 export const WETH = {
-  [ChainId.ASTR_MAINNET]: new Token(
-    ChainId.ASTR_MAINNET,
+  [ChainId.ETH_MAINNET]: new Token(
+    ChainId.ETH_MAINNET,
     '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
     18,
-    'WASTR',
-    'Wrapped ASTR'
+    'WETH',
+    'ETH Coin'
   ),
-  [ChainId.ASTR_TESTNET]: new Token(
-    ChainId.ASTR_TESTNET,
+  [ChainId.ETH_ROPSTEN]: new Token(
+    ChainId.ETH_ROPSTEN,
     '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
     18,
-    'WASTR',
-    'Wrapped ASTR'
+    'WETH',
+    'ETH Coin'
   ),
-
-  [ChainId.SDN_MAINNET]: new Token(
-    ChainId.SDN_MAINNET,
-    '0x0f933Dc137D21cA519ae4C7E93f87a4C8EF365Ef',
+  [ChainId.ETH_RINKEBY]: new Token(
+    ChainId.ETH_RINKEBY,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
     18,
-    'WSDN',
-    'Wrapped SDN'
+    'WETH',
+    'ETH Coin'
   ),
-  [ChainId.SDN_TESTNET]: new Token(
-    ChainId.SDN_TESTNET,
-    '0x321F318e7C276c93Cf3094fd3a9d7c4362fd19FB',
+  [ChainId.OPTIMISTIC_MAINNET]: new Token(
+    ChainId.OPTIMISTIC_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
     18,
-    'WSDN',
-    'Wrapped SDN'
+    'WOPTIMISTIC',
+    'OPTIMISTIC Coin'
   ),
-
   [ChainId.BSC_MAINNET]: new Token(
     ChainId.BSC_MAINNET,
     '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
@@ -94,11 +92,165 @@ export const WETH = {
     'WBNB',
     'Wrapped BNB'
   ),
+  [ChainId.ONTOLOGY_MAINNET]: new Token(
+    ChainId.ONTOLOGY_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WONTOLOGY',
+    'ONTOLOGY Coin'
+  ),
+  [ChainId.OEC_MAINNET]: new Token(
+    ChainId.OEC_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WOEC',
+    'OEC Coin'
+  ),
+  [ChainId.OPTIMISTIC_TESTNET]: new Token(
+    ChainId.OPTIMISTIC_TESTNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WOPTIMISTIC',
+    'OPTIMISTIC Coin'
+  ),
+  [ChainId.ASTR_TESTNET]: new Token(
+    ChainId.ASTR_TESTNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WASTR',
+    'ASTR Coin'
+  ),
+  [ChainId.SDN_TESTNET]: new Token(
+    ChainId.SDN_TESTNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WSDN',
+    'SDN Coin'
+  ),
   [ChainId.BSC_TESTNET]: new Token(
     ChainId.BSC_TESTNET,
     '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
     18,
     'WBNB',
     'Wrapped BNB'
+  ),
+  [ChainId.XDAI_MAIN]: new Token(
+    ChainId.XDAI_MAIN,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WXDAI',
+    'XDAI Coin'
+  ),
+  [ChainId.HECO_MAINNET]: new Token(
+    ChainId.HECO_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WHECO',
+    'HECO Coin'
+  ),
+  [ChainId.POLYGON_MAINNET]: new Token(
+    ChainId.POLYGON_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WPOLYGON',
+    'POLYGON Coin'
+  ),
+  [ChainId.FANTOM_MAINNET]: new Token(
+    ChainId.FANTOM_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WFANTOM',
+    'FANTOM Coin'
+  ),
+  [ChainId.BOBA_MAINNET]: new Token(
+    ChainId.BOBA_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WBOBA',
+    'BOBA Coin'
+  ),
+  [ChainId.SHIDEN_MAINNET]: new Token(
+    ChainId.SHIDEN_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WSHIDEN',
+    'SHIDEN Coin'
+  ),
+  [ChainId.THETA_MAINNET]: new Token(
+    ChainId.THETA_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WTHETA',
+    'THETA Coin'
+  ),
+  [ChainId.THETA_TESTNET]: new Token(
+    ChainId.THETA_TESTNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WTHETA',
+    'THETA Coin'
+  ),
+  [ChainId.ASTR_MAINNET]: new Token(
+    ChainId.ASTR_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WASTR',
+    'Wrapped ASTR'
+  ),
+  [ChainId.SDN_MAINNET]: new Token(
+    ChainId.SDN_MAINNET,
+    '0x0f933Dc137D21cA519ae4C7E93f87a4C8EF365Ef',
+    18,
+    'WSDN',
+    'Wrapped SDN'
+  ),
+  [ChainId.FANTOM_TESTNET]: new Token(
+    ChainId.FANTOM_TESTNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WFANTOM',
+    'FANTOM Coin'
+  ),
+  [ChainId.ARBITRUM_MAINNET]: new Token(
+    ChainId.ARBITRUM_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WARBITRUM',
+    'ARBITRUM Coin'
+  ),
+  [ChainId.AVAX_MAIN]: new Token(
+    ChainId.AVAX_MAIN,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WAVAX',
+    'AVAX Coin'
+  ),
+  [ChainId.ARBITRUM_TESTNET]: new Token(
+    ChainId.ARBITRUM_TESTNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WARBITRUM',
+    'ARBITRUM Coin'
+  ),
+  [ChainId.POLYGON_TESTNET]: new Token(
+    ChainId.POLYGON_TESTNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WPOLYGON',
+    'POLYGON Coin'
+  ),
+  [ChainId.AVALANCH_MAINNET]: new Token(
+    ChainId.AVALANCH_MAINNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WAVALANCH',
+    'AVALANCH Coin'
+  ),
+  [ChainId.AVALANCH_TESTNET]: new Token(
+    ChainId.AVALANCH_TESTNET,
+    '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    18,
+    'WAVALANCH',
+    'AVALANCH Coin'
   ),
 }
