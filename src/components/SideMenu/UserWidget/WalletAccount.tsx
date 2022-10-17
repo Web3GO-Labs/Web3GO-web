@@ -3,16 +3,16 @@ import { useWeb3React } from '@web3-react/core';
 import { Button, Svg } from '@my/ui';
 import ConnectWalletButton from '../../ConnectWalletButton';
 import useAuth from 'hooks/useAuth';
-const WalletAccountInfo = () => {
+const WalletAccountInfo = ({ collapsed }) => {
   const { logout } = useAuth();
   const { account } = useWeb3React();
 
   return (
     <>
       {account ? (
-        <Button scale="sm" width="160px" padding="0" onClick={logout}>
+        <Button scale="sm" width={collapsed ? '130px' : '160px'} padding="0" onClick={logout}>
           {/* <img className="head_icon" src={karsierNft} alt="header_default" /> */}
-          {account ? `${account.substring(0, 6)}...${account.substring(account.length - 4)}` : ''}
+          {account ? `${account.substring(0, 4)}...${account.substring(account.length - 3)}` : ''}
           {/* <LogoutIcon /> */}
           <Svg viewBox="0 0 24 24" marginLeft="10px" fill="#83FFC1">
             <path

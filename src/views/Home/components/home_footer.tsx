@@ -5,7 +5,7 @@ const HomeFooter = () => {
   return (
     <HomeFooterStyled>
       <h2>Welcome</h2>
-      <p>Welcome to Web3GO, become one of us.</p>
+      <p>Welcome to Web3GO Labs, become one of us.</p>
       <p>As a long-termist and lifelong learner, join us in this new Web3 startup carnival.</p>
       <CollectLink />
     </HomeFooterStyled>

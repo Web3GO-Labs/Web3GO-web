@@ -15,7 +15,7 @@ const HomeHeader: FC<{ className?: string; setCollapsed: (collapsed: boolean) =>
           <Logo collapsed={collapsed} />
           <div className="right">
             <Nav collapsed={collapsed} />
-            <UserWidget />
+            <UserWidget collapsed={collapsed} />
           </div>
         </FlFlex>
       </div>

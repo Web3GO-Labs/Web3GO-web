@@ -54,7 +54,7 @@ const BG = () => {
 };
 const BannerStyled = styled.div`
   position: relative;
-  padding: 100px 20px 0;
+  padding: 60px 20px 0;
   margin: 0 auto;
   max-width: ${({ theme }) => theme.siteWidth}px;
   text-align: center;

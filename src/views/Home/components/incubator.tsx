@@ -283,7 +283,7 @@ const IncubatorStyled = styled.div`
     padding: 200px 0;
   }
   .text {
-    padding: 0 14vw 60px;
+    padding: 0 20px 60px;
     text-align: center;
     ${({ theme }) => theme.mediaQueries.md} {
       padding: 0 20px 140px;

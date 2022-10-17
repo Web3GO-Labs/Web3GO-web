@@ -13,21 +13,21 @@ to {
 const ScrollBannerStyle = styled.div`
   display: inline-block;
   width: calc(31vw * 4 + 4vw * 2 * 4);
-  max-width: calc(504px * 4 + 4vw * 2 * 4);
+  max-width: calc(590px * 4 + 4vw * 2 * 4);
   min-width: calc(270px * 4 + 4vw * 2 * 4);
   animation: ${marquee} 10s linear infinite;
   background-color: #fff;
   img {
     display: inline-block;
     width: 31vw;
-    max-width: 504px;
+    max-width: 590px;
     min-width: 270px;
     margin: 0 4vw;
   }
 `;
 const ScrollBannerStyledInner = styled.div`
   width: calc(31vw * 4 + 4vw * 2 * 4 + 31vw * 4 + 4vw * 2 * 4);
-  max-width: calc(504px * 4 + 4vw * 2 * 4 + 504px * 4 + 4vw * 2 * 4);
+  max-width: calc(590px * 4 + 4vw * 2 * 4 + 590px * 4 + 4vw * 2 * 4);
   min-width: calc(270px * 4 + 4vw * 2 * 4 + 270px * 4 + 4vw * 2 * 4);
   padding: 24px 0;
   ${({ theme }) => theme.mediaQueries.md} {

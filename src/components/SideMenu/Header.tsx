@@ -42,7 +42,7 @@ const Header: FC<{ className?: string; setCollapsed: (collapsed: boolean) => voi
         <FlFlex>
           <Logo collapsed={collapsed} />
           <Nav collapsed={collapsed} />
-          <UserWidget />
+          <UserWidget collapsed={collapsed} />
         </FlFlex>
       </div>
     </div>

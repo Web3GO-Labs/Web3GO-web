@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex } from '@my/ui';
 import WalletAccountInfo from './WalletAccount';
-const UserWidget = () => {
+const UserWidget = ({ collapsed }) => {
   return (
     <User>
-      <WalletAccountInfo />
+      <WalletAccountInfo collapsed={collapsed} />
     </User>
   );
 };
